@@ -1,6 +1,6 @@
 {
   "name": "nounmeral",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Seamlessly combines numbers and nouns in singular or plural forms for cohesive text output.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,7 +8,6 @@
     "./lib/**/*"
   ],
   "scripts": {
-    "postinstall": "npm run build",
     "test": "jest --verbose",
     "build": "tsc",
     "watch": "tsc -w",
