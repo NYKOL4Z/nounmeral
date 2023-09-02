@@ -1,0 +1,44 @@
+{
+  "name": "nounmeral",
+  "version": "1.0.0",
+  "description": "Seamlessly combines numbers and nouns in singular or plural forms for cohesive text output.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "./lib/**/*"
+  ],
+  "scripts": {
+    "postinstall": "npm run build",
+    "test": "jest --verbose",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "nodemon lib/index.js",
+    "start:playground-js-common": "cd playground/js/common && npm i && node index.js",
+    "start:playground-js-module": "cd playground/js/module && npm i && node index.js",
+    "start:playground-ts": "cd playground/ts && npm i && npm run build && npm start",
+    "start:playgrounds": "npm run start:playground-js-common && npm run start:playground-js-module && npm run start:playground-ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NYKOL4Z/nounmeral.git"
+  },
+  "keywords": [
+    "noun",
+    "singular",
+    "plural",
+    "quantize",
+    "count",
+    "words",
+    "numeral"
+  ],
+  "author": "Nicolas Britos",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "@types/node": "^18.17.13",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  }
+}
