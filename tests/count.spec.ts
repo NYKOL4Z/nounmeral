@@ -1,4 +1,4 @@
-import nounmeral from '..';
+import nounmeral from '../lib/index.js';
 
 test('Can count regular nouns', () => {
   expect(nounmeral(-1, 'cat')).toBe('-1 cats');
