@@ -8,9 +8,14 @@
  * @param {string} [pluralNoun] - The plural form of the noun. If not provided, the function will automatically append "s" to the singular form to create the plural form.
  * @return {string} The string representation of the numeral and noun.
  */
-export function nounmeral(numeral: number, singularNoun: string, pluralNoun?: string): string {
+export function nounmeral(
+  numeral: number,
+  singularNoun: string,
+  pluralNoun?: string,
+): string {
   let noun = singularNoun;
-  if (numeral !== 1) noun = pluralNoun !== undefined ? pluralNoun : `${singularNoun}s`;
+  if (numeral !== 1)
+    noun = pluralNoun !== undefined ? pluralNoun : `${singularNoun}s`;
   return `${numeral} ${noun}`;
 }
 
