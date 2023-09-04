@@ -69,12 +69,24 @@ for (let num = 1; num <= 3; num++) {
 // I saw 3 mice.
 ```
 
+Some words append something different than an "s" to the singular form of the noun to get the plural form. For those you can add a "/" and the text to be appended, to get the plural form:
+
+```JavaScript
+for (let num = 1; num <= 3; num++) {
+  console.log(`I saw ${nounmeral(num, 'fox/es')}.`);
+}
+// Output:
+// I saw 1 fox.
+// I saw 2 foxes.
+// I saw 3 foxes.
+```
+
 ### Function Signature
 
 The nounmeral function takes the following parameters:
 
 - `numeral` (required): A number representing the quantity.
-- `singularNoun` (required): The singular form of the noun.
+- `singularNoun` (required): The singular form of the noun. If it contains a "/", the text up to the slash will be used for the singular form, and the entire string (without the slash), will be used for the plural form.
 - `pluralNoun` (optional): The plural form of the noun. If not provided, the function will automatically append "s" to the singular form to create the plural form.
 
 ## License
