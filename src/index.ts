@@ -23,3 +23,4 @@ export function nounmeral(
 
 export default nounmeral;
 module.exports = nounmeral;
+module.exports.default = nounmeral;
