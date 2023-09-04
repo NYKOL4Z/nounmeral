@@ -13,3 +13,10 @@ test('Can count irregular nouns', () => {
   expect(nounmeral(1, 'mouse', 'mice')).toBe('1 mouse');
   expect(nounmeral(2, 'mouse', 'mice')).toBe('2 mice');
 });
+
+test('Can count semi-regular nouns', () => {
+  expect(nounmeral(-1, 'fox/es')).toBe('-1 foxes');
+  expect(nounmeral(0, 'fox/es')).toBe('0 foxes');
+  expect(nounmeral(1, 'fox/es')).toBe('1 fox');
+  expect(nounmeral(2, 'fox/es')).toBe('2 foxes');
+});
