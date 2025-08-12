@@ -40,9 +40,9 @@ npm i nounmeral
 Once you've installed the package, you can import it into your JavaScript or TypeScript files as follows:
 
 ```JavaScript
-const yourPackage = require('nounmeral');
+const nounmeral = require('nounmeral');
 // OR
-import yourPackage from 'nounmeral';
+import nounmeral from 'nounmeral';
 ```
 
 Now you can use `nounmeral` with your strings:
